@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nav_barlayout_act" />
+    <TextView android:id="@id/myinfo_setting" android:background="@color/gray_fp" android:layout_marginTop="@dimen/dp20" android:layout_marginBottom="@dimen/dp3" android:text="@string/myinfo" style="@style/text_setting" />
+    <Switch android:id="@id/swch_manual_conn" android:background="@color/gray_fp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp3" android:text="手动连接智能器械" style="@style/text_setting" />
+    <Switch android:id="@id/swch_path_man_detect" android:background="@color/gray_fp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp3" android:text="手动开启步道探测" style="@style/text_setting" />
+</LinearLayout>

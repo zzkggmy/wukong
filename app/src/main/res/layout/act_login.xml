@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nav_bar_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp20" android:layout_marginTop="@dimen/dp50" android:layout_marginRight="@dimen/dp20">
+        <EditText android:id="@id/login_un" android:hint="@string/enterphone" android:maxLines="1" android:maxLength="11" android:inputType="number" style="@style/edit_login" />
+        <View android:background="@color/gray_navtv" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginBottom="@dimen/dp10" />
+        <EditText android:id="@id/login_pwd" android:hint="@string/enterpwd" android:maxLines="1" android:maxLength="12" android:inputType="textPassword" style="@style/edit_login" />
+        <View android:background="@color/gray_navtv" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" />
+        <TextView android:textColor="@color/gray_navtv" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20" android:text="@string/forgetpwd" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp30" android:paddingRight="@dimen/dp30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp20">
+        <TextView android:textSize="@dimen/sp18" android:gravity="center" android:id="@id/loginbtn" android:padding="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp18" android:gravity="center" android:id="@id/login_regbtn" android:padding="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/register" android:layout_weight="2.0" />
+    </LinearLayout>
+    <include layout="@layout/other_login_icons" />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nav_bar_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/orange_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:padding="@dimen/dp30" style="@style/layout_mine">
+            <TextView android:textSize="@dimen/sp18" android:text="@string/keeponexerc" style="@style/text_mine" />
+            <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:id="@id/mine_keepexerc" android:layout_marginTop="@dimen/dp15" android:layout_marginBottom="@dimen/dp15" android:text="0" style="@style/text_mine" />
+            <TextView android:text="@string/days" style="@style/text_mine" />
+        </LinearLayout>
+        <LinearLayout android:padding="@dimen/dp30" style="@style/layout_mine">
+            <TextView android:textSize="@dimen/sp18" android:text="@string/consume" style="@style/text_mine" />
+            <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:id="@id/mine_consume" android:layout_marginTop="@dimen/dp15" android:layout_marginBottom="@dimen/dp15" android:text="0" style="@style/text_mine" />
+            <TextView android:text="@string/kcal" style="@style/text_mine" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/orange_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10">
+        <LinearLayout android:padding="@dimen/dp30" android:visibility="gone" style="@style/layout_mine">
+            <TextView android:textSize="@dimen/sp18" android:text="@string/bbequipment" style="@style/text_mine" />
+            <TextView android:textSize="@dimen/sp12" android:text="@string/keepexercs" style="@style/text_mine" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/layout_mine">
+                    <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:id="@id/mine_minute" android:layout_marginTop="@dimen/dp15" android:layout_marginBottom="@dimen/dp15" android:text="0" style="@style/text_mine" />
+                    <TextView android:textSize="@dimen/sp12" android:text="@string/minute" style="@style/text_mine" />
+                </LinearLayout>
+                <LinearLayout style="@style/layout_mine">
+                    <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:id="@id/mine_zu" android:layout_marginTop="@dimen/dp15" android:layout_marginBottom="@dimen/dp15" android:text="0" style="@style/text_mine" />
+                    <TextView android:textSize="@dimen/sp12" android:text="@string/group" style="@style/text_mine" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/mine_device" android:visibility="gone" android:layout_width="@dimen/dp1" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp40" android:layout_marginBottom="@dimen/dp40" />
+        <LinearLayout android:padding="@dimen/dp30" style="@style/layout_mine">
+            <TextView android:textSize="@dimen/sp18" android:text="@string/bbfootpath" style="@style/text_mine" />
+            <TextView android:textSize="@dimen/sp12" android:text="@string/keepexercs" style="@style/text_mine" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/layout_mine">
+                    <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:id="@id/mine_km" android:layout_marginTop="@dimen/dp15" android:layout_marginBottom="@dimen/dp15" android:text="0" style="@style/text_mine" />
+                    <TextView android:textSize="@dimen/sp12" android:text="@string/km" style="@style/text_mine" />
+                </LinearLayout>
+                <LinearLayout style="@style/layout_mine">
+                    <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp18" android:id="@id/mine_circle" android:background="@mipmap/circle1" android:layout_marginTop="@dimen/dp6" android:layout_marginBottom="@dimen/dp9" android:text="9999" style="@style/text_mine" />
+                    <TextView android:textSize="@dimen/sp12" android:text="@string/circle" style="@style/text_mine" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp18" android:id="@id/todaydata" android:padding="@dimen/dp5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>

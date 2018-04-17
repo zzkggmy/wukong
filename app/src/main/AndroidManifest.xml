@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wukong.main" android:platformBuildVersionCode="25" android:platformBuildVersionName="7.1.1">
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="no.nordicsemi.android.LOG"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher11" android:label="@string/app_name" android:name="com.wukong.main.base.WukongApplication" android:theme="@style/AppTheme">
+        <service android:name="com.wukong.services.gym.DeviceService"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS0"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS1"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS2"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS3"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS4"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS5"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS6"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS7"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS8"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS9"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS10"/>
+        <service android:name="com.wukong.services.gym.DeviceService_F$RunS11"/>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="SG8f7hFWuI0mkyW7RAMDcv66eVDIacYf"/>
+        <activity android:name="com.wukong.main.Loading" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wukong.main.base.HomeUIAct" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.login.LoginAct" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.login.RegisterAct" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barroute.ExercisingAct" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barroute.ShowResultAct" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.IndoorGymTuningUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barroute.IndoorGymUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barroute.PopGymSwaySiUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barroute.PopGymWaistTwistUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.DeviceSignalUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.BatchDeviceSignalTestUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.TuneMotionDeviceParams" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.GetMotionDeviceParams" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.DeviceSignalAndDataTestUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.SelectDeviceTypeUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.BatchDeviceSignalConnTestUI" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barfootpath.MoreFootpathAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.wukong.main.barfootpath.DialogAct" android:screenOrientation="portrait"/>
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <uses-library android:name="android.test.runner"/>
+        <activity android:excludeFromRecents="true" android:name="com.umeng.socialize.editorpage.ShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.wukong.main.barfootpath.HeartRate" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.test.HeartRateTest" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barmine.SettingAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.wukong.main.barmine.MyselfAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.wukong.main.barmine.UserDataChoose" android:screenOrientation="portrait" android:theme="@style/MyDialogStyleBottom"/>
+        <activity android:name="com.wukong.main.barroute.PopGymFRotaBikeUI" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barroute.PopGymSwayBiUI" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.wukong.main.barroute.ManualSelectActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1106126611"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.wukong.main.AppRegister" android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.wukong.main.wxapi.WXEntryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.sina.weibo.sdk.net.DownloadService"/>
+        <activity android:name="com.wukong.main.login.BondPhoneAct"/>
+        <activity android:name="com.wukong.main.barfootpath.FootPathInfoAct"/>
+    </application>
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/native_layout" android:background="@color/gray_fp" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/ntt_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/orange_bg" android:id="@id/ntt_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/wrist_band_count" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/basket_net" android:layout_centerVertical="true" />
+    <TextView android:id="@id/basket_net" android:background="@mipmap/wkdiscon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/basketball_count" android:layout_centerVertical="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/basketball_count" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/ntt_right" android:layout_centerVertical="true" />
+    <TextView android:id="@id/ntt_right" android:background="@mipmap/wkdiscon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

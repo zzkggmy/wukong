@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/tab_menu" android:paddingTop="@dimen/dp5" android:paddingBottom="@dimen/dp3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RadioButton android:id="@id/tab_menu_mine" android:text="@string/mine" android:drawableTop="@drawable/tab_menu_mine" style="@style/tab_menu_rb" />
+        <RadioButton android:id="@id/tab_menu_route" android:text="@string/route" android:drawableTop="@drawable/tab_menu_route" style="@style/tab_menu_rb" />
+        <RadioButton android:id="@id/tab_menu_footpath" android:text="@string/footpath" android:drawableTop="@drawable/tab_menu_footpath" style="@style/tab_menu_rb" />
+        <RadioButton android:id="@id/tab_menu_rank" android:text="@string/rank" android:drawableTop="@drawable/tab_menu_rank" style="@style/tab_menu_rb" />
+        <RadioButton android:id="@id/tab_menu_test" android:text="@string/test" android:drawableTop="@drawable/tab_menu_rank" style="@style/tab_menu_rb" />
+    </RadioGroup>
+    <View android:id="@id/tab_menu_line" android:background="@color/gray_navtv" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_above="@id/tab_menu" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tab_menu_line" android:layout_below="@id/nbl_layout" />
+</RelativeLayout>

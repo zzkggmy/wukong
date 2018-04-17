@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/naitve_top_title_pop" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/device_type" android:background="@color/gray_fp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="动作传感器" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/darkGray" android:gravity="center" android:id="@id/repetition_cnt" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0/10" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/finishrep" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/darkGray" android:gravity="center" android:id="@id/setcnt" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0˚" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rt_amp_d" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/darkGray" android:gravity="center" android:id="@id/new_repetition_cnt" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0/10" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/newfinishrep" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/darkGray" android:gravity="center" android:id="@id/new_amp" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0˚" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_rt_amp_d" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gym_layout_margin">
+        <LinearLayout android:orientation="horizontal" android:id="@id/rtamplayoutlft" android:background="@color/greenTitle01alfa" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" android:rotation="180.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rtamplayoutrt" android:background="@color/greenTitle01alfa" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:id="@id/tv_rt_amp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rt_amp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gym_layout_margin">
+        <LinearLayout android:orientation="horizontal" android:id="@id/rtamplayoutlft1" android:background="@color/greenTitle01alfa" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" android:rotation="180.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/rtamplayoutrt1" android:background="@color/greenTitle01alfa" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray_text" android:gravity="center" android:id="@id/tv_rt_amp1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rt_amp1" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/device_params" android:background="@color/gray_fp" android:layout_width="fill_parent" android:layout_height="35.0sp" android:hint="静置3秒至计数变黑" />
+            <TextView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+            <Button android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="110.0dip" android:hint="@string/conndevice" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

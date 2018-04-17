@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_fp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:background="@color/orange_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/singreport" />
+    <TextView android:id="@id/device_name" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/taikong" />
+    <RelativeLayout style="@style/single_rlayout">
+        <TextView android:textSize="18.0sp" android:id="@id/item1" android:text="@string/ci_nums" android:layout_alignParentLeft="true" style="@style/single_text" />
+        <TextView android:textColor="@color/orange_tv" android:id="@id/value1" android:text="22次" android:layout_alignParentRight="true" style="@style/single_text" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/single_rlayout">
+        <TextView android:textSize="@dimen/sp18" android:id="@id/item2" android:text="@string/zu_nums" android:layout_alignParentLeft="true" style="@style/single_text" />
+        <TextView android:textColor="@color/orange_tv" android:id="@id/value2" android:text="2组" android:layout_alignParentRight="true" style="@style/single_text" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/single_rlayout">
+        <TextView android:textSize="@dimen/sp18" android:id="@id/item3" android:text="@string/rate_nums" android:layout_alignParentLeft="true" style="@style/single_text" />
+        <TextView android:textColor="@color/orange_tv" android:id="@id/value3" android:text="12次/分钟" android:layout_alignParentRight="true" style="@style/single_text" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp1">
+        <LinearLayout style="@style/layout_route">
+            <TextView android:textSize="@dimen/sp20" android:textColor="@color/single_times" android:gravity="center" android:id="@id/time_elapse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30分钟" android:drawableLeft="@mipmap/time" android:drawablePadding="@dimen/dp10" />
+        </LinearLayout>
+        <View android:background="@color/gray_navtv" android:layout_width="@dimen/dp1" android:layout_height="@dimen/dp20" />
+        <LinearLayout style="@style/layout_route">
+            <TextView android:textSize="@dimen/sp20" android:textColor="@color/single_kcal" android:gravity="center" android:id="@id/calories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="300大卡" android:drawableLeft="@mipmap/kcal_a" android:drawablePadding="@dimen/dp10" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp20" android:textColor="@color/red" android:gravity="center" android:id="@id/singre_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/end" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

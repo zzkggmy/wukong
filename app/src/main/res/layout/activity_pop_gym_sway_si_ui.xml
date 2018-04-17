@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/naitve_top_title_pop" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/gym_layout_margin" android:layout_marginBottom="@dimen/gym_layout_margin" android:layout_weight="7.5">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="68.0sp" android:textStyle="bold" android:textColor="@color/ltgray" android:gravity="center" android:id="@id/repetition_cnt" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/finishrep" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="68.0sp" android:textStyle="bold" android:textColor="@color/ltgray" android:gravity="center" android:id="@id/setcnt" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/finishset15" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/gym_layout_margin" android:layout_marginBottom="@dimen/gym_layout_margin" android:layout_weight="6.0">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gym_2nd_row_textsize" android:textStyle="bold" android:textColor="@color/ltgray" android:gravity="center" android:layout_gravity="center" android:id="@id/frequency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:text="@string/score_0" android:drawableTop="@mipmap/rate" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/frequency" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gym_2nd_row_textsize" android:textStyle="bold" android:textColor="@color/ltgray" android:gravity="center" android:layout_gravity="center" android:id="@id/lastingtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:text="@string/time_0" android:drawableTop="@mipmap/time" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/timeelapse" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/gym_2nd_row_textsize" android:textStyle="bold" android:textColor="@color/ltgray" android:gravity="center" android:layout_gravity="center" android:id="@id/calories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:text="@string/score_0" android:drawableTop="@mipmap/kcal" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Cal" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/gym_layout_margin" android:layout_marginBottom="@dimen/gym_layout_margin" android:layout_weight="2.5">
+            <LinearLayout android:orientation="horizontal" android:id="@id/rtamplayoutlft" android:background="@color/greenTitle01alfa" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/gym_layout_margin" android:layout_marginRight="20.0dip" android:layout_marginBottom="0.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_text" android:gravity="center" android:id="@id/tv_rt_amp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rt_amp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="6.0">
+            <TextView android:gravity="center" android:background="@color/gray_text" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/addviewlayout" android:background="@color/greenTitle01alfa" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <TextView android:background="@color/gray_text" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/speed" android:alpha="160.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="@dimen/gym_layout_margin" android:layout_weight="1.8">
+            <TextView android:textSize="16.0sp" android:textColor="@color/ltgray" android:gravity="center" android:id="@id/wrongdevice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:text="@string/wrong_device" android:alpha="160.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/settingtv0" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv1" android:layout_marginTop="3.0dip" android:text="@string/hour" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv2" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv3" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv4" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv5" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv6" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv7" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv8" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv9" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv10" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv11" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+        <TextView android:id="@id/settingtv12" android:layout_marginTop="3.0dip" android:text="@string/heartrate" style="@style/settingtvwk" />
+    </LinearLayout>
+</FrameLayout>

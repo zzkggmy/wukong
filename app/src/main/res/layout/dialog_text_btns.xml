@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp20" android:textColor="@color/black" android:id="@id/dialot_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp30" />
+    <TextView android:textSize="@dimen/sp16" android:textColor="@color/black" android:id="@id/dialot_tv_msg" android:paddingLeft="@dimen/dp20" android:paddingRight="@dimen/dp20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" />
+    <View android:background="@color/yellow" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginTop="@dimen/dp15" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dialog_btnlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/dialot_tv_leftbtn" android:layout_width="@dimen/dp0" android:layout_height="wrap_content" android:text="@string/fou" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/dialot_tv_rightbtn" android:layout_width="@dimen/dp0" android:layout_height="wrap_content" android:text="@string/shi" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/sp18" android:textColor="@color/black" android:gravity="center" android:id="@id/dialot_tv_bottombtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="好" />
+</LinearLayout>

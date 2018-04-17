@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nav_bar_layout" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loheart_rate_bg" android:background="@mipmap/heart_rate_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp50" android:textColor="@color/white" android:id="@id/heart_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp300">
+        <ImageView android:id="@id/hrc_img_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/hrc_clock" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp25" android:src="@mipmap/hrc_hand_l" android:layout_toLeftOf="@id/hrc_img_center" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp25" android:src="@mipmap/hrc_hand_r" android:layout_toRightOf="@id/hrc_img_center" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <Button android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/heart_rate_tips" android:background="@mipmap/hrc_btnbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp40" android:text="@string/heartrate" />
+</LinearLayout>

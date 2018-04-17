@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/otherloginlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp50" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/login_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wechat" />
+        <ImageView android:id="@id/login_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp30" android:layout_marginRight="@dimen/dp30" android:src="@mipmap/qq" />
+        <ImageView android:id="@id/login_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sina" />
+    </LinearLayout>
+    <TextView android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp30" android:text="@string/loginother" android:layout_above="@id/otherloginlayout" />
+</RelativeLayout>

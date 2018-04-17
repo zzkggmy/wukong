@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nav_bar_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp25" android:layout_marginTop="@dimen/dp50" android:layout_marginRight="@dimen/dp25">
+        <EditText android:id="@id/reg_phonenum" android:hint="@string/enterphone" android:maxLines="1" android:maxLength="11" android:inputType="number" style="@style/edit_login" />
+        <View android:background="@color/gray_navtv" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" android:layout_marginBottom="@dimen/dp10" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp10">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/reg_codeet" android:hint="@string/entercode" android:maxLines="1" android:maxLength="4" android:inputType="number" style="@style/edit_login" />
+                <View android:background="@color/gray_navtv" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" />
+            </LinearLayout>
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/reg_codebtn" android:background="@mipmap/getcode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/getcode" android:layout_weight="1.0" />
+        </LinearLayout>
+        <EditText android:id="@id/reg_pwd" android:hint="@string/pwdhint" android:maxLines="1" android:maxLength="12" android:inputType="textPassword" style="@style/edit_login" />
+        <View android:background="@color/gray_navtv" android:layout_width="fill_parent" android:layout_height="@dimen/dp1" />
+    </LinearLayout>
+    <include layout="@layout/other_login_icons" />
+</LinearLayout>

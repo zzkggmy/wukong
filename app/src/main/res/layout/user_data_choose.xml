@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/bg_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/udc_cancle" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentLeft="true" />
+            <Button android:textColor="@color/black" android:gravity="center" android:id="@id/udc_confirm" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.wukong.main.widgets.wheel.view.WheelView android:id="@id/udc_wv1" android:layout_width="@dimen/dp0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wukong.main.widgets.wheel.view.WheelView android:id="@id/udc_wv2" android:visibility="gone" android:layout_width="@dimen/dp0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <com.wukong.main.widgets.wheel.view.WheelView android:id="@id/udc_wv3" android:visibility="gone" android:layout_width="@dimen/dp0" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

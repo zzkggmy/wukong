@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/naitve_top_title_pop" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:scrollbarStyle="outsideOverlay" android:textSize="12.0sp" android:textColor="@color/black" android:gravity="left" android:id="@id/info1" android:background="@color/greenTitle01alfa" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="30" android:scrollbarFadeDuration="2000" />
+    </LinearLayout>
+    <TextView android:background="@color/gray_text" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/info" />
+    <TextView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="110.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="110.0dip" android:layout_marginBottom="2.0dip" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_fp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nav_bar_layout" />
+    <TextView android:padding="@dimen/dp10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/taikong" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/dp35" android:paddingBottom="@dimen/dp35" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/layout_route">
+            <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp50" android:text="5/20" style="@style/text_exercisi" />
+            <TextView android:text="@string/complete_ci" style="@style/text_exercisi" />
+        </LinearLayout>
+        <LinearLayout style="@style/layout_route">
+            <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp50" android:text="1/13" style="@style/text_exercisi" />
+            <TextView android:text="@string/complete_zu" style="@style/text_exercisi" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="@dimen/dp35" android:paddingBottom="@dimen/dp35" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10">
+        <LinearLayout style="@style/layout_route">
+            <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:text="5/20" android:drawableTop="@mipmap/rate" android:drawablePadding="@dimen/dp10" style="@style/text_exercisi" />
+            <TextView android:textColor="@color/gray_text" android:layout_marginTop="@dimen/dp10" android:text="@string/rate" style="@style/text_exercisi" />
+        </LinearLayout>
+        <LinearLayout style="@style/layout_route">
+            <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:text="00:00:11" android:drawableTop="@mipmap/time" android:drawablePadding="@dimen/dp10" style="@style/text_exercisi" />
+            <TextView android:textColor="@color/gray_text" android:layout_marginTop="@dimen/dp10" android:text="@string/time" style="@style/text_exercisi" />
+        </LinearLayout>
+        <LinearLayout style="@style/layout_route">
+            <com.wukong.main.widgets.MineTextView android:textSize="@dimen/sp30" android:text="20" android:drawableTop="@mipmap/kcal" android:drawablePadding="@dimen/dp10" style="@style/text_exercisi" />
+            <TextView android:textColor="@color/gray_text" android:layout_marginTop="@dimen/dp10" android:text="@string/kcal" style="@style/text_exercisi" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:text="@string/frequently_used_equipment" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rout_select_layout_margin" android:layout_marginBottom="@dimen/rout_select_layout_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="前推训练器" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="引体向上训练器" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rout_select_layout_margin" android:layout_marginBottom="@dimen/rout_select_layout_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="深蹲训练器" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="腹背肌训练器" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp8" android:text="@string/near_equipment" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rout_select_layout_margin" android:layout_marginBottom="@dimen/rout_select_layout_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="上肢牵引器" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="直立健身车" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rout_select_layout_margin" android:layout_marginBottom="@dimen/rout_select_layout_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="钟摆器" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/dp120" android:layout_height="@dimen/dp120" android:src="@mipmap/route" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="太空漫步机" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

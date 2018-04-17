@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_fp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp18" android:gravity="center" android:background="@color/white" android:padding="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/footpath" />
+    <com.wukong.main.widgets.MoveScorllView android:id="@id/fp_scroll" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/fp_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/fp_toplayout" android:background="@color/white" android:padding="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="@dimen/dp260" android:layout_marginTop="@dimen/dp1" android:layout_marginBottom="@dimen/dp15">
+                <ImageView android:id="@id/img_path" android:layout_width="fill_parent" android:layout_height="@dimen/dp200" android:src="@mipmap/path_default" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp12">
+                    <TextView android:id="@id/fp_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京市" android:drawableLeft="@mipmap/address" android:layout_alignParentLeft="true" />
+                    <TextView android:textColor="@color/orange_tv" android:gravity="center" android:id="@id/morefootpath" android:background="@mipmap/morefootpath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morefootpath" android:layout_centerInParent="true" />
+                    <TextView android:textColor="@color/orange_tv" android:id="@id/tv_path_total_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--米" android:drawableLeft="@mipmap/distances" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fp_bottomlayout" android:background="@color/white" android:padding="@dimen/dp15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp5">
+                <TextView android:textSize="@dimen/dp18" android:textColor="@color/orange_tv" android:gravity="center" android:background="@mipmap/enterfootpath" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/todaypathdata" />
+                <TextView android:textSize="@dimen/sp14" android:textColor="@color/orange_tv" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp7" android:text="@string/autostart" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp7">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/steps" android:layout_centerInParent="true" />
+                    <TextView android:textSize="@dimen/sp32" android:textColor="@color/orange_tv" android:gravity="center" android:id="@id/fp_steps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/defaultzero" android:layout_centerInParent="true" />
+                    <TextView android:textColor="@color/orange_tv" android:id="@id/char_step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step" android:layout_toRightOf="@id/fp_steps" android:layout_alignBaseline="@id/fp_steps" />
+                </RelativeLayout>
+                <View android:background="@mipmap/fp_device" android:layout_width="wrap_content" android:layout_height="@dimen/dp2" android:layout_marginTop="@dimen/dp12" android:layout_marginBottom="@dimen/dp10" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout style="@style/layout_mine">
+                        <TextView android:padding="@dimen/dp5" android:text="@string/distance" style="@style/text_fp" />
+                        <TextView android:textSize="@dimen/sp28" android:id="@id/tv_distance" android:text="@string/defaultzero" style="@style/text_fp" />
+                        <TextView android:text="@string/meter" style="@style/text_fp" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_mine">
+                        <TextView android:padding="@dimen/dp5" android:text="@string/duration" style="@style/text_fp" />
+                        <TextView android:textSize="@dimen/sp28" android:id="@id/tv_duration" android:text="@string/defaulttime" style="@style/text_fp" />
+                        <TextView android:text="@string/second" style="@style/text_fp" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_mine">
+                        <TextView android:padding="@dimen/dp5" android:text="@string/route_fp" style="@style/text_fp" />
+                        <TextView android:textSize="@dimen/sp28" android:id="@id/tv_circles" android:text="@string/defaultzero" style="@style/text_fp" />
+                        <TextView android:text="@string/circle" style="@style/text_fp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@mipmap/fp_device" android:layout_width="wrap_content" android:layout_height="@dimen/dp2" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp10" android:paddingBottom="@dimen/dp20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout style="@style/layout_mine">
+                        <TextView android:padding="@dimen/dp5" android:text="@string/speed" style="@style/text_fp" />
+                        <TextView android:textSize="@dimen/sp28" android:id="@id/tv_speed" android:text="@string/defaultzero" style="@style/text_fp" />
+                        <TextView android:text="@string/speeddw" style="@style/text_fp" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_mine">
+                        <TextView android:textSize="@dimen/dp18" android:textColor="@color/white" android:id="@id/tv_get_heart_rate" android:background="@mipmap/getheartrate" android:padding="@dimen/dp1" android:text="@string/heartrates" style="@style/text_fp" />
+                        <TextView android:textSize="@dimen/sp28" android:id="@id/tv_heart" android:text="@string/defaultvalue" style="@style/text_fp" />
+                        <TextView android:text="@string/heardw" style="@style/text_fp" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/layout_mine">
+                        <TextView android:padding="@dimen/dp5" android:text="@string/consumer" style="@style/text_fp" />
+                        <TextView android:textSize="@dimen/sp28" android:id="@id/tv_cal" android:text="@string/defaultzero" style="@style/text_fp" />
+                        <TextView android:text="@string/kcal" style="@style/text_fp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.wukong.main.widgets.MoveScorllView>
+    <LinearLayout android:orientation="horizontal" android:background="@color/ltergrayfa" android:paddingTop="@dimen/dp5" android:paddingBottom="@dimen/dp5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/layout_mine">
+            <ImageView android:id="@id/imgv_pause" android:visibility="gone" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" android:src="@mipmap/stop1" />
+        </LinearLayout>
+        <LinearLayout style="@style/layout_mine">
+            <ImageView android:id="@id/imgv_play" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" android:src="@mipmap/play1" />
+        </LinearLayout>
+        <LinearLayout style="@style/layout_mine">
+            <ImageView android:id="@id/imgv_stop" android:visibility="gone" android:layout_width="@dimen/dp55" android:layout_height="@dimen/dp55" android:src="@mipmap/stop2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
